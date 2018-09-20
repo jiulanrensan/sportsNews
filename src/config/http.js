@@ -1,13 +1,46 @@
 import Vue from 'vue'
 import router from '../router'
 import axios from 'axios'
-
-//对axios进行配置，然后在用到axios请求的文件中导入
-
-//axios库默认的请求时长为1000，这里修改默认设置
+import { Indicator } from 'mint-ui';
+import { Toast } from 'mint-ui';
 axios.defaults.timeout = 30000;
-//全局的 axios 默认值
-//axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
-axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+axios.defaults.headers.common['Content-Type'] = 'application/json;charset=UTF-8'
+// http request 拦截器
+axios.interceptors.request.use(
+    config => {
+      Indicator.open({
+        text: '加载中...',
+        spinnerType: 'fading-circle'
+      });
+      return config;
 
+    },
+    err => {
+      Indicator.close();
+      Toast({
+        message: '加载超时',
+        position: 'middle',
+        duration: 3000
+      });
+      return Promise.reject(err);
+    });
+
+// http response 拦截器
+axios.interceptors.response.use(
+    response => {
+      let timetp = null;
+      clearTimeout(timetp);
+      timetp = setTimeout(()=>{
+        Indicator.close();
+        clearTimeout(timetp);
+      },500)
+      // Indicator.close();
+      return response;
+    },
+    error => {
+      if (error.response) {
+        return Promise.reject(error)
+    }
+});
 Vue.prototype.$ajax = axios;
+
