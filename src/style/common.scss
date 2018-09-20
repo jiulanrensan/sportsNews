@@ -1,0 +1,55 @@
+body, div, span, header, footer, nav, section, aside, 
+article, ul, dl, dt, dd, li, a, p, 
+h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, 
+figure, figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Microsoft YaHei', sans-serif, -apple-system-font, 'Helvetica Neue', Helvetica;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    /*&:focus {
+        outline: none;
+    }*/
+}
+.loadmore,.loadnone{
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+}
+.router-slide-enter-active, 
+.router-slide-leave-active {
+    transition: all .4s;
+}
+.router-slide-enter, 
+.router-slide-leave-active {
+    transform: translateX(100%);
+}
+.router-right-enter-active, 
+.router-right-leave-active {
+    transition: all .4s;
+}
+.router-right-enter, 
+.router-right-leave-active {
+    transform: translateY(100%);
+}
+.htmlbox p{
+  margin: 0.2rem 0;
+}
+.htmlbox img{
+  width: 100%;
+  margin: 0.2rem 0;
+}
+.iconfont{
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+}
