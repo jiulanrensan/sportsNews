@@ -1,14 +1,6 @@
-# vue-sports
+# sport-news
 
 > A Vue.js project
-
-仿凤凰新闻体育板块+赛事数据
-
-体育新闻板块已经完成(暂时未用到vuex) ，正在弄体育赛事数据接口(计划加入vuex)
-
-<p align="center">
-  <img src="./src/assets/img/lx.gif" alt="凤凰新闻体育板块" >
-</p>
 
 ## Build Setup
 
@@ -24,8 +16,15 @@ npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
 ```
 
-# 目标功能
-- [x] 体育新闻 -- 完成
-- [ ] 比赛数据 -- 未完成
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

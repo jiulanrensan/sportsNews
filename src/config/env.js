@@ -1,14 +1,13 @@
-/**
- * 配置编译环境和线上环境之间的切换
- *
- * xxxUrl: 域名地址
- * routerMode: 路由模式
- *
- */
+/*
+配置编译环境和线上环境之间的切换
+xxxUrl: 域名地址
+routerMode: 路由模式
+*/
 let iclienturl;
 let ifeng3gurl;
 let routerMode;
 let commenturl;
+//若是开发环境,否则为生产环境
 if (process.env.NODE_ENV == 'development') {
   iclienturl = 'iclient/'
   ifeng3gurl = 'ifeng3g/'
