@@ -10,7 +10,7 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {
+    /*proxyTable: {
         '/iclient': {
             target: 'https://api.iclient.ifeng.com/',
             changeOrigin: true, //跨域
@@ -32,7 +32,9 @@ module.exports = {
               '^/comment': ''
             }
         }
-    },
+    },*/
+    //打包后
+    proxyTable: {},
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
