@@ -1,6 +1,11 @@
 # sport-news
 
-> A Vue.js project
+刚开始学vue,参考别人的开源项目仿凤凰新闻移动端
+
+vue+axios+swiper
+
+效果如gif
+
 
 ## Build Setup
 

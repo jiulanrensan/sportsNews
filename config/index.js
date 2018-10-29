@@ -37,6 +37,7 @@ module.exports = {
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
+    //host: '172.29.35.36',
     port: 8081, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
@@ -67,8 +68,8 @@ module.exports = {
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     //assetsPublicPath: '/',
-    //打包部署需要加./
-    assetsPublicPath: './',
+    //打包部署需要加 /vue/
+    assetsPublicPath: '/vue/',
 
     /**
      * Source Maps

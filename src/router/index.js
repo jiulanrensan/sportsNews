@@ -67,7 +67,8 @@ const routes = [
 const router =  new Router({
   routes: routes,
   mode: 'hash',
-  strict: process.env.NODE_ENV !== 'production'
+  //base: '/vue/',
+  //strict: process.env.NODE_ENV !== 'production'
 })
 /*
 process.env 是读取系统环境变量的，
