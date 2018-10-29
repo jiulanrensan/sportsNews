@@ -6,6 +6,7 @@ vue+axios+swiper
 
 效果如gif
 
+![img](https://github.com/jiulanrensan/sportsNews/blob/master/Screenrecorder-2018-09-25-23-30-40-705.mp4_1540806651.gif)
 
 ## Build Setup
 
