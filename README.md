@@ -1,36 +1,30 @@
 # sport-news
+### 技术栈
+* node.js环境
+* webpack
+* vue全家桶
+* axios
+* scss
+* vue-infinite-scroll
+* vue-awesome-swiper
 
-刚开始学vue,参考别人的开源项目仿凤凰新闻移动端
+效果图：
 
-vue+axios+swiper
-
-效果如gif
-
-![img](https://github.com/jiulanrensan/sportsNews/blob/master/Screenrecorder-2018-09-25-23-30-40-705.mp4_1540806651.gif)
-
+<img width="50%" src="https://github.com/jiulanrensan/sportsNews/blob/master/Screenrecorder-2018-09-25-23-30-40-705.mp4_1540806651.gif"> 
+<img width="50%" src="https://github.com/jiulanrensan/sportsNews/blob/master/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20181125191342.png"> 
+<img width="50%" src="https://github.com/jiulanrensan/sportsNews/blob/master/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20181125191413.png">
+<img width="50%" src="https://github.com/jiulanrensan/sportsNews/blob/master/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20181125191502.png">
 ## Build Setup
 
 ``` bash
-# install dependencies
+# 安装依赖
 npm install
 
-# serve with hot reload at localhost:8080
+# 运行，浏览器输入localhost:8081
 npm run dev
 
-# build for production with minification
+# 打包
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
